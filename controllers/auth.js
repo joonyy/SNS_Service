@@ -3,7 +3,7 @@ const passport = require('passport');
 const User= require('../models/user');
 
 //회원가입 컨트롤러
-exports.join = async(req,res,next) =>{
+exports.join = async (req,res,next) =>{
   const {email, nick, password} = req.body;
   try{
     const exUser = await User.findOne({where: {email}});
@@ -41,7 +41,7 @@ exports.login = (req, res, next) =>{
       return res.redirect('/');
     });
   })(req,res,next);
-}
+};
 //로그아웃 컨트롤러
 exports.logout = (req,res)=>{
   req.logout(()=>{
