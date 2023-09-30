@@ -46,7 +46,7 @@ input[type='text'],input[type='email'],input[type='password'],textarea{
   border: 1px solid silver;
   background: lightcoral;
 }
-.user-name {front-weight: bold; font-size:18px; }
+.user-name {font-weight: bold; font-size:18px; }
 .count{ font-weight: bold; color: crimson; font-size: 18px;}
 .timeline{
   margin-top: 10px;
@@ -98,6 +98,16 @@ input[type='text'],input[type='email'],input[type='password'],textarea{
   color:crimson;
   font-size:12px;
   cursor: pointer;
+}
+.twit-unfollow{
+  padding:1px 5px;
+  background:#fff;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color:crimson;
+  font-size:12px;
+  cursor: pointer;
+
 }
 .twit-img{text-align: center;}
 .twit-img img {max-width: 75%;}
