@@ -16,7 +16,7 @@ exports.follow = async (req,res,next)=>{
   }
 };
 //언팔로우.
-exports.unfollow = async (req,res, next) =>{
+exports.unfollow = async (req, res, next) =>{
   try{
     const user = await User.findOne({where: {id: req.params.id}});
     if(user){  
