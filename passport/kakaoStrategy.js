@@ -8,6 +8,7 @@ module.exports = () =>{
     clientID:process.env.KAKAO_ID,
     callbackURL: '/auth/kakao/callback',
   }, async(accessToken, refreshToken, profile, done)=>{
+    //profile : 사용자 정보
     console.log('kakao profile', profile);
     try{
       const exUser = await User.findOne({

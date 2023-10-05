@@ -21,6 +21,8 @@ router.get('/join', isNotLoggedIn, renderJoin);
 
 router.get('/', renderMain);
 
+router.get('/delete/account', isLoggedIn);
+
 router.get('/hashtag', renderHashtag);
 
 module.exports = router;
